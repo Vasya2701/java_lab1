@@ -3,28 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab4;
+package lab6;
 
 /**
  *
  * @author ya_vv
  */
-public class zadanie2 {
+public class zadanie3 {
 public static void main(String[] args) {
-double s=0;
-for ( double x=1; x<5; x++) {
-while ( x%2==1 ) {
-s=s+1/x;
-break;}
+int[] a = { 1, -2, 3, 4, 5, 6, 54, 87, 12, 45, 11, 13, 14, 15, 21, 44, 27, 42, 96, 33 };
+double sum = 0;
+for (int i = 0; i < a.length; i++) {
+sum = sum + a[i];
 }
-
-for ( double n=1; n<5; n++) {
-while ( n%2==0 ) {
-s=s-1/n;
-break;}
-}
-System.out.println(s);
+sum = sum / a.length;
+System.out.print(sum);
 }
 }
-    
-

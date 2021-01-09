@@ -3,28 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab4;
+package lab6;
 
 /**
  *
  * @author ya_vv
  */
-public class zadanie2 {
+import java.util.Random;
+public class zadanie5 {
 public static void main(String[] args) {
-double s=0;
-for ( double x=1; x<5; x++) {
-while ( x%2==1 ) {
-s=s+1/x;
-break;}
+Random rand = new Random();
+for (var i = 0; i < 3; i++) {
+for (var j = 0; j < 5; j++) {
+System.out.print(rand.nextInt(10) + " ");
+}
+System.out.println();
+}
+}
 }
 
-for ( double n=1; n<5; n++) {
-while ( n%2==0 ) {
-s=s-1/n;
-break;}
-}
-System.out.println(s);
-}
-}
-    
 

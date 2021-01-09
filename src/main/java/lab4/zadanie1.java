@@ -35,7 +35,7 @@ System.out.printf("%d + %d = %d%n", a, b, c);
 numBox.clear();
 }
 public static void main(String[] args) {
-printNumsEquFerma(2);
+printNumsEquFerma(3);
 printNumsEquFerma(3);
 printNumsEquFerma(11);
 }

@@ -10,18 +10,33 @@ package lab3;
  * @author ya_vv
  */
 public class zadanie1 {
- 
-static int b=3;
-static void stepen (int n) {
-int result =1;
-for (int i=0; i<n; i++) {
-result*=b;
-}
-System.out.println(result);
-}
+
 public static void main (String[] args) {
-stepen (3);
+double n = -6;
+double b=3;
+double drob = 1;
+double result = 3;
+int x;
+if (n > 0)
+{
+   x = (int) n;
+   for (int i=0; i<n; i++) 
+   {
+       result*=b;
+       System.out.println(result);
+   } 
+   
 }
+else
+{
+    x = (int) n;
+    for (int i=x; i<0; i++) 
+   {
+       drob = drob * (1/b);
+       
+   } 
+    System.out.println( drob );
 }
 
-
+}
+}

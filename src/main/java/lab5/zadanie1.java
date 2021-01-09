@@ -9,12 +9,20 @@ package lab5;
  *
  * @author ya_vv
  */
-import java.io.BufferedReader;
+import java.util.Scanner;
 import java.io.IOException;
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 public class zadanie1 {
     public static void main(String[] args) throws IOException {
+        System.out.println("Введи число:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        
+        
+        double numb = Double.parseDouble(reader.readLine());
+        //Scanner in = new Scanner(System.in);
+        //double x = in.nextInt();
+        
         String[] words = new String[10];
             for (int j=0;j<10;j++)
             {
@@ -29,14 +37,29 @@ public class zadanie1 {
                 words[8]="Весемь";
                 words[9]="Девять";
             }
-            int numb = Integer.parseInt(reader.readLine());
-                while (numb<0 || numb >9)
-                {
-                    System.out.println("Так нельзя делать. Введите число от нуля до девяти.");
-                    numb = Integer.parseInt(reader.readLine());
-                }
-            if (numb>=0 || numb<=9){
-            System.out.println(words[numb]);}
+             
+          
+            
+            if (numb>=0 || numb<=9)
+            {
+                
+                if ((numb ==  0) || (numb ==  1) || (numb ==  2) || (numb ==  3) || (numb ==  4) || (numb ==  5)  || (numb ==  6) || (numb ==  7) || (numb ==  8) || (numb ==  9) || (numb ==  0)) 
+            {
+              int num = (int)numb;
+            System.out.println(words[num]);
+            }
+            else 
+            {
+            System.out.println("От 0 до 9 целым числом");
+            }
+          }
+          else
+          {
+          System.out.println("от 0 до 9");
+          }
     }
+          
+           
 }
 
+        
